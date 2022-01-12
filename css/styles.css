@@ -132,6 +132,8 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--text-color-two);
   font-weight: 500;
@@ -144,6 +146,24 @@ img {
 .contacts-link:focus {
   color: var(--brand-color);
 }
+
+/* .contacts-link::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  background-color: red;
+
+  background-image: url();
+  background-size: contain;
+} */
+
+/* .icon-mail {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  background-color: red;
+} */
 
 /* Оформление подвала сайта footer */
 .footer {
@@ -266,11 +286,36 @@ img {
 }
 
 .function-item {
-  width: 270px;
+  max-width: 270px;
 }
 
 .function-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.function-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .function-subtitle {
