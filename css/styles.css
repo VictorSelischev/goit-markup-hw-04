@@ -132,7 +132,6 @@ img {
 }
 
 .contacts-link {
-  display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--text-color-two);
@@ -142,28 +141,27 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--brand-color);
+.mail {
 }
 
 /* .contacts-link::before {
   content: '';
-  height: 20px;
-  width: 20px;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
-  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  background-image: url();
+.icon-mail::before {
+  background-image: url(../images/cont-mail.svg);
   background-size: contain;
 } */
 
-/* .icon-mail {
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-  background-color: red;
-} */
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--brand-color);
+}
 
 /* Оформление подвала сайта footer */
 .footer {
