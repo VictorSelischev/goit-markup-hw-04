@@ -16,6 +16,7 @@
   --brand-color: #2196f3;
   --brand-color-black: #000000;
   --brand-color-white: #ffffff;
+  --icon-color: #afb1b8;
   --color-white: #ffffff;
   --background-color-section: #2f303a;
   --text-color: #212121;
@@ -53,7 +54,7 @@ img {
   height: auto;
 }
 
-/* Оформление логотипа */
+/* --------------------- LOGO ------------------ */
 .logo {
   display: inline-block;
   padding: 25px 0;
@@ -76,7 +77,7 @@ img {
   color: var(--brand-color-white);
 }
 
-/* Оформление навигации сайта header*/
+/* ---------------- HEADER ---------------- */
 .list {
   list-style: none;
 }
@@ -141,6 +142,15 @@ img {
   letter-spacing: 0.02em;
 }
 
+.button-cont {
+  border: none;
+}
+
+.icon-button {
+  width: 100px;
+  height: 100px;
+}
+
 .mail {
 }
 
@@ -163,7 +173,7 @@ img {
   color: var(--brand-color);
 }
 
-/* Оформление подвала сайта footer */
+/* ---------------- FOOTER ----------------- */
 .footer {
   padding: 60px 0;
 
@@ -200,7 +210,7 @@ img {
   color: var(--color-section-text-two);
 }
 
-/* Оформление секции Hero */
+/* --------------  HERO ------------------ */
 
 .section-hero {
   padding: 200px 0;
@@ -217,9 +227,9 @@ img {
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .title-hero {
@@ -259,7 +269,7 @@ img {
   background-color: var(--button-filter-color-hover);
 }
 
-/* Оформление секции преимущества */
+/* ---------- ПРЕИМУЩЕСТВА -------------- */
 
 .section {
   padding: 95px 0;
@@ -333,7 +343,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* Секция Услуги компании */
+/* --------------- УСЛУГИ КОМПАНИИ ----------- */
 
 .no-padding-top {
   padding-top: 0;
@@ -358,7 +368,7 @@ img {
   text-align: center;
 }
 
-/* Секция Наша команда */
+/* -------------- НАША КОМАНДА ---------------- */
 
 .fon-team {
   background: var(--button-filter-color);
@@ -394,13 +404,48 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 15px;
 }
 
 .team-text-box {
   padding: 30px 0;
 }
 
-/* Интерактивная секция кнопок портфолио */
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  outline: 4px;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--brand-color);
+}
+
+.team-social-icon {
+  fill: var(--icon-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: #ffffff;
+}
+
+/* ----------- ФИЛЬТР ПОРТФОЛИО ----------- */
 
 .filter-button {
   padding: 6px 22px;
@@ -433,7 +478,7 @@ img {
   margin-right: 8px;
 }
 
-/* Часть секции Портфолио */
+/* ------------ ПОРФОЛИО -------------- */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
