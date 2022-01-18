@@ -428,7 +428,6 @@ img {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
-  outline: 4px;
 }
 
 .team-social-link:hover,
@@ -443,6 +442,38 @@ img {
 .team-social-link:hover .team-social-icon,
 .team-social-link:focus .team-social-icon {
   fill: #ffffff;
+}
+
+/* ----------- ПОСТОЯННЫЕ КЛИЕНТЫ ------------ */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+
+.icon-client {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ----------- ФИЛЬТР ПОРТФОЛИО ----------- */
