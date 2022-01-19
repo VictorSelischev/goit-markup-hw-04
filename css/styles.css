@@ -160,30 +160,6 @@ img {
   background-position: center;
 } */
 
-.button-cont {
-  border: none;
-}
-
-.icon-button {
-}
-
-.mail {
-}
-
-/* .contacts-link::before {
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-mail::before {
-  background-image: url(../images/cont-mail.svg);
-  background-size: contain;
-} */
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--brand-color);
@@ -224,6 +200,59 @@ img {
 .mail,
 .phone {
   color: var(--color-section-text-two);
+}
+
+.footer-social {
+  padding-top: 12px;
+}
+
+.footer-social-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  margin-bottom: 20px;
+}
+
+.footer-socail-icons {
+  max-width: 206px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-logo-address {
+  margin-right: 70px;
+}
+
+.footer-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.footer-icon {
+  fill: currentColor;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--brand-color);
 }
 
 /* --------------  HERO ------------------ */
