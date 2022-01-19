@@ -133,6 +133,8 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: var(--text-color-two);
@@ -142,13 +144,27 @@ img {
   letter-spacing: 0.02em;
 }
 
+.icon-contact {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+/* .contacts-link::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/mail.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 .button-cont {
   border: none;
 }
 
 .icon-button {
-  width: 100px;
-  height: 100px;
 }
 
 .mail {
@@ -219,7 +235,7 @@ img {
   text-align: center;
 }
 
-/* Описание фоновой картинки в Герое */
+/* -------------- OVERLAY in HERO -------------- */
 .overlay {
   max-width: 1600px;
   height: 600px;
