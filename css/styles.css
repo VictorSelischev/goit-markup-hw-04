@@ -345,7 +345,18 @@ img {
   margin-right: 30px;
 }
 
-.function-item::before {
+.function-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-filter-color);
+  height: 120px;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+/* .function-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -368,7 +379,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .function-subtitle {
   margin-bottom: 10px;
